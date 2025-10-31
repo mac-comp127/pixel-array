@@ -3,7 +3,7 @@ import java.util.Scanner;
 import edu.macalester.graphics.CanvasWindow;
 import edu.macalester.graphics.Image;
 
-public class ImageTransform {
+public class ColorTransform {
 
     public static Image lighten(Image srcImage) {
         // TODO: Task 1
@@ -43,11 +43,10 @@ public class ImageTransform {
             case 3 -> invert(srcImage);
         };
 
-        CanvasWindow canvas = new CanvasWindow("img", 500, 500);
+        CanvasWindow canvas = new CanvasWindow("Exciting Image", 800, 600);
         canvas.add(transformed);
         transformed.setCenter(canvas.getCenter());
 
         scan.close();
     }
-    
 }
